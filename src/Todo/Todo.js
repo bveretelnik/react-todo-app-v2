@@ -12,7 +12,7 @@ export default function Todo({ todo, inprogress, id }) {
     fb.collection("todos").doc(id).delete();
   };
   return (
-    <div style={{ display: "lex" }}>
+    <div style={{ display: "flex" }}>
       <ListItem>
         <ListItemText
           primary={todo}
