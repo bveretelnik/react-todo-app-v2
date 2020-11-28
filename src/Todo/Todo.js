@@ -16,14 +16,16 @@ export default function Todo({ todo, inprogress, id }) {
       <ListItem>
         <ListItemText
           primary={todo}
-          secondary={inprogress ? "In Progress..." : "Completed"}
+          secondary={inprogress ? "In Progress... 🛠" : "Completed 🥳"}
         />
       </ListItem>
 
       <Button onClick={toggleInProgress}>
         {inprogress ? "Done" : "UnDone"}
       </Button>
-      <Button onClick={deleteTodo}>X</Button>
+      <Button color="secondary" onClick={deleteTodo}>
+        X
+      </Button>
     </div>
   );
 }

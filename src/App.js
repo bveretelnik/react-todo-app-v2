@@ -44,7 +44,7 @@ export default function App() {
         <form>
           <TextField
             id="standard-basic"
-            label="Write a Todo"
+            label="Write a Todo ✍️"
             value={todoInput}
             style={{ width: "90vw", maxWidth: "500px" }}
             onChange={(e) => setTodoInput(e.target.value)}
