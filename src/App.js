@@ -60,7 +60,12 @@ export default function App() {
         </form>
         <div className="container2">
           {todos.map((todo) => (
-            <Todo todo={todo.todo} inprogress={todo.inprogress} id={todo.id} />
+            <Todo
+              key={todo.id}
+              todo={todo.todo}
+              inprogress={todo.inprogress}
+              id={todo.id}
+            />
           ))}
         </div>
       </div>
